@@ -37,12 +37,12 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-19.07
+  REPO_URL: https://github.com/coolsnowwolf/lede.git
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: k2p.config
   DIY_OP_SH: diy-openwrt.sh
-  DIY_OP2_SH: diy-openwrt-2.sh
+  DIY_OP2_SH: diy2-openwrt.sh
   SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
