@@ -10,7 +10,7 @@
 # 修改openwrt登陆地址,把下面的192.168.0.1修改成你想要的就可以了，其他的不要动
 sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
 #设置root密码为password,lienol源码中密码为空
-sed -i '/root::0:0:99999:7:::/s/^#//'  package/default-settings/files/zzz-default-settings
+#sed -i '/root::0:0:99999:7:::/s/^#//'  package/default-settings/files/zzz-default-settings
 #sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/default-settings/files/zzz-default-settings  #设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 #把默认bootstrap主题改成OpenTomato
 #sed -i 's/luci-theme-bootstrap/luci-theme-OpenTomato/g' ./feeds/luci/collections/luci/Makefile	
@@ -20,7 +20,7 @@ sed -i '/root::0:0:99999:7:::/s/^#//'  package/default-settings/files/zzz-defaul
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
 
 # Add a feed source
-#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/V2RaySSR/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/V2RaySSR/small' feeds.conf.default
 
