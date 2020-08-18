@@ -16,7 +16,7 @@ on:
 #编辑任意指定文件触发开始编译(去掉下面5个#开启,最下面一行是指定修改什么文件就触发编译,我现在是修改diy.config文件触发)
    push:
      branches:
-       - dev-19.07
+       - master
      paths:
        - 'newife3-d2.config'
 
@@ -43,7 +43,7 @@ env:
   CONFIG_FILE: newifi3-d2.config
   DIY_OP_SH: diy-openwrt.sh
   DIY_OP2_SH: diy2-openwrt.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
