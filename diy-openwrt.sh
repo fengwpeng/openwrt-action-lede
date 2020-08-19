@@ -20,8 +20,8 @@ sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/x86/Makefile  #修改内核版本
 
 # Add a feed source
-sed -i '$a src-git kenzo https://github.com/V2RaySSR/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/V2RaySSR/small' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/V2RaySSR/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/V2RaySSR/small' feeds.conf.default
 #取消掉feeds.conf.default文件里面的helloworld的#注释
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowSocksR Plus+出国软件
 
