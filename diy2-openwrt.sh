@@ -13,4 +13,4 @@
 sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generate
 
 #把默认bootstrap主题改成openTomato
-sed -i 's/luci-theme-bootstrap/luci-theme-openTomato/g' ./feeds/luci/collections/luci/Makefile	
+#sed -i 's/luci-theme-bootstrap/luci-theme-openTomato/g' ./feeds/luci/collections/luci/Makefile	
