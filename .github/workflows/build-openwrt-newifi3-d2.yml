@@ -43,7 +43,7 @@ env:
   CONFIG_FILE: newifi3-d2.config
   DIY_OP_SH: diy-openwrt.sh
   DIY_OP2_SH: diy2-openwrt.sh
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
